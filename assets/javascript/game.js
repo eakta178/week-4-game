@@ -1,6 +1,8 @@
     
 	var compGuess;
 	var tally=0;
+	var win = 0;
+	var loss = 0;
 
 
     var link = $('#getNumber'); 
@@ -51,10 +53,14 @@ $('.crystal').on("click",function(){
 	if(tally === compGuess)
 	{
 		$('#win').html("<h1>You Win!</h1>");
+		win++;
+		$('#wincount').html("WINS: " + win)
 		gameOver();
 	}
 	else if (tally > compGuess) {
 		$('#win').html("<h1>You Lose!</h1>");
+		loss++;
+		$('#losscount').html("LOSS: " + loss)
 		gameOver();
 
 	}
@@ -66,6 +72,7 @@ function gameOver() {
 	
 	 $(".crystal").each(function(){
         	
+        	$(this).attr("data-value",0);
         	$(this).addClass("disabled");
 
         })

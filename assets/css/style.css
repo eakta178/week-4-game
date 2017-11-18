@@ -1,2 +1,22 @@
 
 
+
+.crystal{width: 50px; height: 50px; margin: 5px;}
+#head{text-decoration: underline;}
+
+body{background-image: url('../images/backcrystal.jpg');font-family: 'Courgette', cursive;
+color: #F5F5F5}
+
+p{font-size: 1.5rem;}
+h1{}
+
+#getnumber{margin: 10px;}
+#gamestart{margin: 10px;}
+
+#wincount{font-weight: bold; font-size: 1.5rem;}
+#losscount{font-weight: bold; font-size: 1.5rem;}
+
+h2{font-size: 2.0rem;}
+
+#guess{font-size: 2.5rem; margin: 20px; color: blue}
+#result{font-size: 2.5rem; margin: 20px; color: blue}

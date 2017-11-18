@@ -6,48 +6,75 @@
 	<link rel="stylesheet" type="text/css" href="assets\css\reset.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets\css\style.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Lobster" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
 	<div class="row">
 		<div col-lg-offset-4 col-lg-4>
-			<h1>Crystal Collector</h1>
+			<h1 class="jumbotran text-center" id="head">Crystal Collector</h1>
 		</div>
 		
+	</div>
+
+
+	<div class="row">
+		<div class="col-lg-12">
+			
+
+			  	<div class="col-lg-4 text-center">
+			    	<button id="getNumber" class="btn btn-primary" value="start"><h1>Start the Game</h1></button>
+				</div>
+			    <div id="guess" class="col-lg-offset-4 text-left"></div>
+
+			 	<div class="col-lg-12" id="gamestart">
+		
+				<div class="col-lg-4 text-center">
+						<img src="assets/images/crystal1.jpg" class="crystal" value="start">
+						<img src="assets/images/crystal2.jpg" class="crystal" value="start" ></button>
+						<img src="assets/images/crystal3.jpg" class="crystal" value="start" ></button>
+						<img src="assets/images/crystal4.jpg" class="crystal" value="start" ></button>
+				</div>
+				<div id="result" class="col-lg-offset-4 text-left"></div>
+				
+		</div>
+
+		</div>
+	</div>
+
+	<div class="row">
+				<div class="col-lg-4 text-center">
+				  	<div id="wincount"><p>WINS: 0<br></p></div>
+					<div id="losscount"><p>LOSS: 0<br></p></div>
+					<div id="win"></div>
+			 	</div>
+
+
 	</div>
 	<div class="row">
 		<div class="col-lg-12">
-			<h1>Instructions</h1>
+			
+			
+			    <h2>Instructions</h2>
+			
+			
+			  	<div class="col-lg-8">
+				    <p>You will be given a random number at start of the game.</p>
+				    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				    <p>Winning Condition: If your total score matches random number.</p>
+				    <p>The value of each crystal is hidden until you click on it.</p>
+				    <p>New random number is assigned when game restarts.</p>
+				</div>
+
+			
+
+			
 		</div>
 	
-</div>
-
-<div class="row">
-	<div class="col-lg-12">
-		
-	
-
-		<button id="getNumber" class="btn btn-success" value="start"><h1>Start the Game</h1></button>
-		<!-- <input type="textbox" name="guess" id="guess"> -->
-		<div id="guess"></div>
-	<div class="col-lg-12">
-		<button id="crystal1" class="btn btn-success disabled crystal" value="start"><h1>Crystal1</h1></button>
-		<button id="crystal2" class="btn btn-success disabled crystal" value="start"><h1>Crystal2</h1></button>
-		<button id="crystal3" class="btn btn-success disabled crystal" value="start"><h1>Crystal3</h1></button>
-		<button id="crystal4" class="btn btn-success disabled crystal" value="start"><h1>Crystal4</h1></button>
-		<!-- <input type="textbox" name="result" id="result"> -->
-		<div id="result"></div>
-		<div id="win"></div>
 	</div>
-	</div>
-	
-</div>
+</div>	
 
-<div>
-	
-</div>
-</div>
 
 
 
